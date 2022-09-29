@@ -1,0 +1,351 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color:#000046;
+}
+
+#home {
+  background: linear-gradient(#1cb5e0,#000046)
+
+}
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.container-fluid {
+    padding: 3% 5% 10% ;
+}
+
+
+/*navigation Bar*/
+
+.logo{
+ width: 2.3rem;
+ height: 2.3rem;
+ position: relative;
+ display: inline-block;
+}
+
+.logo_ink{
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  margin-left: 25px;
+  padding-top: 2px;
+  line-height: 1;
+  position:absolute;
+  display: inline-grid;
+  font-weight: 700;
+}
+
+.navbar {
+  color: #153e90;
+  align-items: center;
+  padding: 10px 35px 10px 25px;
+  border-radius: 2.5rem;
+
+
+}
+
+.navbar-nav{
+
+}
+
+.nav-item {
+padding: 0 0 0 25px;
+font-size: 12px;
+font-family:'Poppins', sans-serif;
+font-weight: 400;
+}
+
+.navbar-brand {
+align-items: center;
+}
+
+.download-button-cv {
+font-family: 'Poppins', sans-serif;
+font-size: 12px;
+border-radius: 2.5rem;
+margin-left: 20px;
+}
+
+.titel-img{
+  width: 20rem;
+  height: 19rem;
+  margin: 40px 20px ;
+}
+
+.title_name{
+margin: 20px 20px;
+padding-top: 5rem;
+color: #fff;
+}
+
+.title_n1{
+  margin-left: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+
+/*--------------- about section------------------*/
+#about {
+    padding: 10% 14% 5% 14% ;
+    color: #fff;
+    background-color: #fabbff;
+    background:#000046;
+
+}
+
+/*---------------skill bar section ----------------*/
+.my-skill{
+  padding-top: 5px;
+}
+.skill-name{
+margin:2px 0 0 7px;
+}
+
+.outer-skill-bar{
+	height: 25px;
+	width:70%;
+  border-radius: 5px;
+  background: #e1e3e6;
+}
+.inner-skill-bar{
+	height: 100%;
+	width: 0%;
+	background: #2d4bb5;
+  border-radius: 5px;
+
+}
+
+
+.skill-value{
+  margin-left: 30px;
+  display: inline-flex;
+}
+
+i{
+  margin-top: 6px;
+}
+
+/*---------------skill bar section end -------------*/
+
+
+/*--------------- circul skill bar section----------*/
+
+
+.progressbar {
+  display: inline-block;
+  width: 150px;
+  margin:30px;
+}
+.circle {
+  width:100%;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.circle div {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+
+}
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+
+/*---------------circul skill bar section end----------*/
+/*---------------about section end-------------*/
+
+
+/*--------------- Resume section------------------*/
+
+#resume{
+  font-family: sans-serif;
+  margin: 0;
+  padding:0;
+  line-height:1.5;
+  font-weight: 400;
+  background: #4c4177;
+  color: #fff;
+  background-color: #fabbff;
+  background:#000046;  /*linear-gradient(45deg, #1cb5e0,#000046 60%);*/
+}
+
+
+
+.top-section{
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline{
+    position: relative;
+    min-height: 150px;
+}
+
+.line{
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 1px);
+    width: 2px;
+    top: -50px;
+    background-color: #fff;
+    display: none;
+}
+
+.line:before,
+.line::after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line:after{
+    bottom: 0;
+}
+
+.section{
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    align-items: center;
+    min-height: 300px;
+}
+
+.section:nth-child(odd){
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+}
+
+.bead{
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.content{
+    width: calc(50% - 2rem);
+    margin-bottom:50px;
+}
+
+.show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+}
+
+
+
+/*--------------- RESUME section end ------------------*/
+
+/*--------------- contact section end ------------------*/
+
+#contact{
+  background-color: #fabbff;
+  background:#000046;
+
+}
+  .contact-form{
+    background: #fff;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -11%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: ##000046;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #000046;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #000046;
+    border: none;
+    cursor: pointer;
+}
+
+.fontlogo{
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 3em;
+}
+
+/*--------------- contact section end ------------------*/
+
+/*---------- @media query 992 ------------*/
+@media (max-width: 992px) {
+
+   #home{
+     text-align: center;
+   }
+   .titel-img{
+     align-items: center;
+   }
+
+}
